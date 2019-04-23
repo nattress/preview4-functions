@@ -1,0 +1,22 @@
+service: preview4-complex-21
+
+provider:
+  name: aws
+  runtime: dotnetcore2.1
+  region: eu-west-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+       - "*"
+      Resource: "*"
+
+
+
+package:
+  individually: true
+
+functions:
+  handle:
+    handler: CustomRuntimeFunction::CustomRuntimeFunction.Function::FunctionHandler
+    package:
+      artifact: bin/release/netcoreapp2.1/complex-21.zip

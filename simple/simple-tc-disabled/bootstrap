@@ -1,0 +1,5 @@
+#!/bin/sh
+# This is the script that the Lambda host calls to start the custom runtime.
+#export COMPlus_TieredCompilation_Tier1CallCountingDelayMs=0
+#export COMPlus_TieredCompilation_DisableTier0Jit=1
+/var/task/CustomRuntimeFunction

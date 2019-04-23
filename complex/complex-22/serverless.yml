@@ -1,0 +1,22 @@
+service: preview4-complex-22
+
+provider:
+  name: aws
+  runtime: provided
+  region: eu-west-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+       - "*"
+      Resource: "*"
+
+
+
+package:
+  individually: true
+
+functions:
+  handle:
+    handler: bootstrap
+    package:
+      artifact: bin/release/netcoreapp2.2/complex-22.zip

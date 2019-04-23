@@ -1,0 +1,14 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "preview4-complex-zac"
+        },
+        "object": {
+          "key": "skateboard_resized.jpg"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+service: preview4-complex-tc-disabled
+
+provider:
+  name: aws
+  runtime: provided
+  region: eu-west-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+       - "*"
+      Resource: "*"
+
+
+
+package:
+  individually: true
+
+functions:
+  handle:
+    handler: bootstrap
+    package:
+      artifact: bin/release/netcoreapp3.0/complex-tc-disabled.zip
