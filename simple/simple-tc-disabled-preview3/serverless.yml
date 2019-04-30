@@ -1,4 +1,4 @@
-service: preview4-simple-tc-enabled-qj-enabled
+service: preview3-simple-tc-disabled
 
 provider:
   name: aws
@@ -11,6 +11,8 @@ provider:
        - xray:PutTelemetryRecords
       Resource: "*"
 
+
+
 package:
   individually: true
 
@@ -18,4 +20,4 @@ functions:
   handle:
     handler: bootstrap
     package:
-      artifact: bin/release/netcoreapp3.0/simple-tc-enabled-qj-enabled.zip
+      artifact: bin/release/netcoreapp3.0/simple-tc-disabled-preview3.zip

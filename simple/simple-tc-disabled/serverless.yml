@@ -3,7 +3,7 @@ service: preview4-simple-tc-disabled
 provider:
   name: aws
   runtime: provided
-  region: eu-west-1
+  region: us-west-2
   iamRoleStatements:
     - Effect: "Allow"
       Action:

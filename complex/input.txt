@@ -3,7 +3,7 @@
     {
       "s3": {
         "bucket": {
-          "name": "preview4-complex-zac"
+          "name": "preview4-complex"
         },
         "object": {
           "key": "skateboard_resized.jpg"
